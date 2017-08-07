@@ -1,4 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');*/
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Muli');
 
 * {
@@ -6,14 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: black;
 }
-
-/*body {*/
-/*    font-family: 'Yanone Kaffeesatz', sans-serif;*/
-/*    letter-spacing: 6px;*/
-/*    font-size: 28px;*/
-/*}*/
 
 .across {
     justify-content: center;
@@ -23,9 +18,287 @@
     align-items: center;
 }
 
-.wrapper, .main-panel, .right-panel, .vertical-align, .right-panel, .left-panel {
+.middle-two {
+    align-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrapper, .main-panel, .right-panel, .vertical-align, .right-panel, .left-panel, .canvas-one, .main-container, .text-conainer {
     display: flex;
 }
+
+.text-container {
+    width: 55%;
+    position: absolute;
+    top: 15%;
+    left:25%;
+}
+
+.main-container {
+    position: relative;
+}
+
+.main-image {
+    width: 65%;
+}
+
+/*.line-one, .line-two, .line-three, .line-four, .line-five, .line-six, .line-seven, .line-eight, .line-nine, .line-ten {*/
+    
+/*}*/
+
+p {
+    font-family: 'Inconsolata', monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 18px;
+    /*padding-bottom: 22px;*/
+    line-height: 40px;
+    color: #000;
+    opacity: 0.0;
+}
+
+
+.line-one {
+    animation: type 3s steps(53);
+    animation-fill-mode: forwards;
+}
+
+.line-two {
+    animation: type2 3s steps(53);
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.line-three {
+    animation: type3 3s steps(57);
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+.line-four {
+    animation: type4 3s steps(50);
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+    background-color: #2ba53b;
+}
+
+.line-five {
+    animation: type5 3s steps(66);
+    animation-delay: 12s;
+    animation-fill-mode: forwards;
+}
+
+.line-six {
+    animation: type6 3s steps(61);
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+}
+
+.line-seven {
+    animation: type7 3s steps(74);
+    animation-delay: 18s;
+    animation-fill-mode: forwards;
+}
+
+.line-eight {
+    animation: type8 3s steps(62);
+    animation-delay: 21s;
+    animation-fill-mode: forwards;
+}
+
+.line-nine {
+    animation: type9 3s steps(72);
+    animation-delay: 24s;
+    animation-fill-mode: forwards;
+}
+
+.line-ten {
+    animation: type10 3s steps(64);
+    animation-delay: 27s;
+    animation-fill-mode: forwards;
+}
+
+.line-eleven a {
+    margin-left: 80%;
+    font-size: 35px;
+    animation: type11 3s steps(1);
+    animation-delay: 31s;
+    animation-fill-mode: forwards;
+    opacity: 0.0;
+    color: #2ba53b;
+}
+
+
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 53ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes type2 {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 53ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 57ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type4 {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 50ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type5 {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 66ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type6 {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 61ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type7 {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 74ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type8 {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 62ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type9 {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 72ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type10 {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 64ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type11 {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 5ch;
+    }
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 
 .wrapper {
@@ -35,49 +308,25 @@
     background-blend-mode: multiply;
 }
 
-.canvas {
-    width: calc(100% - 50px);
-    height: calc(100% - 50px);
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    position: relative;
-    margin: 10px;
+.canvas-one {
+    width: calc(100vw - 30px);
+    height: calc(100vh - 30px);
+    background: url(images/pexels-photo.jpg);
+    background-size: contain;
+    justify-content: space-around;
 }
 
 
-@keyframes title-name {
-  from {
-      width: 0 
-  }
-  to {
-      width: 300px;
-  }
-}
-
-
-.line-one,
-.line-two,
-.line-three {
-    animation: title-name .7s steps(50);
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 39px;
+.title-name {
+    font-size: 50px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #fff;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(228, 226, 211) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgb(115, 114, 109) 120%) rgb(40, 146, 33);
+    background-blend-mode: multiply,multiply;
     line-height: 60px;
-}
-
-.line-one {
-    width: 100px;
-}
-
-.line-two {
-    width: 200px;
-}
-
-.line-three {
-    width: 300px;
 }
 
 
@@ -88,7 +337,7 @@ width: 100%;
 .grow:hover {
     transition: all 0.3s;
     box-shadow: 5px 5px 11px;
-    transform: scale(1.4);
+    transform: scale(2.3);
     cursor: pointer;
 }
 
@@ -99,10 +348,10 @@ width: 100%;
 .button-five,
 .button-six,
 .button-seven {
-    position: absolute;
     border-radius: 50%;
     box-shadow: 5px 5px 11px;
-    margin: 10px;
+    width: 125px;
+    height: 125px;
 }
 
 .button-one:hover {
@@ -111,11 +360,9 @@ width: 100%;
 }
 
 .button-one {
-    width: 150px;
-    height: 150px;
+    /*width: 150px;*/
+    /*height: 150px;*/
     background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-    right: 110px;
-    top: 100px;
 }
 
 .button-two:hover {
@@ -124,11 +371,9 @@ width: 100%;
 }
 
 .button-two {
-    width: 200px;
-    height: 200px;
+    /*width: 200px;*/
+    /*height: 200px;*/
     background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
-    left: 350px;
-    top: 50px;
 }
 
 .button-three:hover {
@@ -137,11 +382,9 @@ width: 100%;
 }
 
 .button-three {
-    width: 200px;
-    height: 200px;
+    /*width: 200px;*/
+    /*height: 200px;*/
     background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
-    right: 550px;
-    bottom: 190px;
 }
 
 .button-four:hover {
@@ -150,11 +393,9 @@ width: 100%;
 }
 
 .button-four {
-    width: 190px;
-    height: 190px;
+    /*width: 190px;*/
+    /*height: 190px;*/
     background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-    right: 320px;
-    bottom: 40px;
 }
 
 .button-five:hover {
@@ -163,11 +404,9 @@ width: 100%;
 }
 
 .button-five {
-    width: 200px;
-    height: 200px;
+    /*width: 200px;*/
+    /*height: 200px;*/
     background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-    right: 380px;
-    top: 30px;
 }
 
 .button-six:hover {
@@ -176,11 +415,9 @@ width: 100%;
 }
 
 .button-six {
-    width: 170px;
-    height: 170px;
+    /*width: 170px;*/
+    /*height: 170px;*/
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-    right: 100px;
-    bottom: 100px;
 }
 
 .button-seven:hover {
@@ -189,11 +426,9 @@ width: 100%;
 }
 
 .button-seven {
-    width: 170px;
-    height: 170px;
+    /*width: 170px;*/
+    /*height: 170px;*/
     background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
-    left: 350px;
-    bottom: 50px;
 }
 
 .main-panel {
