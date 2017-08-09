@@ -21,11 +21,12 @@
 .column {
     flex-direction: column;
 }
-
+/*Flex containers*/
+/*================================================*/
 .wrapper, .main-panel, .right-panel, .vertical-align, .right-panel, .left-panel, .main-container, .text-conainer, .side-nav, .footer {
     display: flex;
 }
-
+/*================================================*/
 .wrapper {
     height: 100vh;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -48,6 +49,8 @@
     width: 65%;
 }
 
+/*The typing styling/effect for the home page*/
+/*==============================================*/
 p {
     font-family: 'Inconsolata', monospace;
     overflow: hidden;
@@ -299,6 +302,7 @@ p {
     }
 }
 
+/*================================================*/
 
 .title-name {
     font-size: 50px;
@@ -317,6 +321,8 @@ img {
 width: 100%;
 }
 
+/*Artwork navigation and effects*/
+/*===============================================*/
 .grow:hover {
     transition: all 0.3s;
     box-shadow: 5px 5px 11px;
@@ -400,7 +406,7 @@ width: 100%;
     background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
 }
 
-
+/*==================================================*/
 .artwork {
     width: 80%;
     box-shadow: 0 14px 38px rgb(226, 231, 237), 0 0 80px 15px rgb(226, 231, 237);
